@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.login_head {
+    height: 65px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    justify-content: flex-start;
+}
+.login_image {
+    margin-top: 1em;
+    width: 15%;
+    height: 75%;
+    background-image: url('/Hospital-PHP/Homepage/Login/Ecare_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.login_description {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.description_1 {
+    color: rgb(216, 42, 138);
+}
+.login_logo {
+    background-image: url('/Hospital-PHP/Homepage/Login/logo-secondary.jpg');
+    background-color: brown;
+    width: 18%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo_nav {
+    background-color: #006546;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 0 2rem; */
+}
+.logo_navbar {
+    margin-left: 1.5rem;
+}
+.logo_nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+.logo_nav a:hover {
+    text-decoration: underline;
+}
+.login_body {
+    background-image: url('/Hospital-PHP/Homepage/Login/login_image.jpg');
+    height: 520px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.login_form {
+    height: 86%;
+    width: 90%;
+    max-width: 40%;
+    background-color: rgb(219, 243, 243);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    padding: 2rem;
+}
+.body1 {
+    display: flex;
+    justify-content: flex-start;
+}
+.body1_img {
+    background-image: url('/Hospital-PHP/Homepage/Login/login.png');
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 13px 0 0 1rem;
+}
+.body1_details {
+    height: 80px;
+    flex: 1;
+    margin-left: 1rem;
+    margin-top: 10px;
+    background-color: rgb(219, 243, 243);
+}
+.body {
+    background-color: white;
+    height: 80px;
+    width: 90%;
+    max-width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+}
+.body a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(6, 72, 53);
+}
+.body a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.body i {
+    margin-left: 1rem;
+}
+.login_warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.logo_warning_box {
+    border: 2px solid black;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.logo_warning_box2 {
+    margin-bottom: 15px;
+}
+
+/* for sign up */
+
+.signup_head {
+    position: fixed;
+    background-color: #327e82;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.signup_head h1 {
+    color: white;
+}
+
+.signup_img {
+    background-image: url('/Hospital-PHP/Homepage/Login/Ecare.jpg');
+    width: 120px;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    border-radius: 10px;
+}
+.signup_box_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+.signup_box {
+    margin-top: 80px;
+    position: absolute;
+    background-color: white;
+    /* height: 780px; */
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(151, 148, 148);
+    padding: 2rem;
+    
+}
+.signup_box_head {
+    background-color: white;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup_box_img {
+    background-image: url('/Hospital-PHP/Homepage/Login/auth.jpg');
+    background-repeat: no-repeat;
+    background-size: contain; /* or 'cover' depending on your need */
+    background-position: center;
+    height: 60%;
+    width: 100%;
+    border-radius: 10px; /* Optional: to match the box's border-radius */
+    overflow: hidden; /* Ensures the content does not overflow */
+}
+
+.signup_box_details {
+    height: 40%;
+    width: 100%;
+   
+
+}
+
+
+
+@keyframes description {
+    0% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: grey;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.description {
+    animation: description 3s infinite;
+}
+
+.signup_case {
+    margin-top: 20px;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 10px;
+    border: solid black;
+    box-sizing: border-box;
+}
+
+.signup_signin {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup_signup {
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup_signin a {
+    text-decoration: none;
+}
+.signup_signin a:active {
+    color: #551A8B;
+}
+.signup_signup a {
+    text-decoration: none;
+}
+.signup_signup a:active {
+    color: #551A8B;
+}
+
+/* for login */
+
+.login-container {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    width: 90%;
+    max-width: 75%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+   
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+  
+    
+}
+input[type="date"],
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 96%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b7cc2;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.875em;
+    display: none;
+}
+
+#passwordCriteria {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#passwordCriteria li {
+    font-size: 0.875em;
+    margin: 5px 0;
+}
+
+#passwordCriteria .valid {
+    color: green;
+}
+
+#passwordCriteria .invalid {
+    color: red;
+}
+
+.warning {
+    display: flex;
+    margin-top: 25px;
+    background-color: white;
+    height: 60px;
+    width: 90%;
+    max-width: 80%;
+    border-radius: 10px;
+    justify-content: center;
+}
+.warning h3 {
+    color: red;
+}
+
+.login_warning{
+    margin-bottom: 20px;
+} 
+select
+{
+    width: 96%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* for msg */
+
+
+.alert {
+    margin-bottom: 20px;
+}
+.alert h4 {
+    color: red;
+    text-align: center;
+}
+.alert h5 {
+    color: red;
+    text-align: center;
+}
+.alert h6 {
+    color: red;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .login_head {
+        flex-direction: column;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .login_image, .login_logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo_nav {
+        justify-content: center;
+    }
+
+    .login_form {
+        width: 80%;
+    }
+
+    .signup_box {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .body {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .logo_warning_box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login_head {
+        padding: 1rem;
+    }
+
+    .logo_nav a {
+        margin-left: 0.5rem;
+    }
+
+    .body a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .signup_case {
+        flex-direction: column; /* Stack items vertically */
+        height: auto;
+        align-items: center;
+        padding: 10px; /* Add padding for spacing */
+    }
+
+    .signup_signin, .signup_signup {
+        width: 100%;
+        margin: 5px 0; /* Add margin for spacing between buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .signup_case {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .signup_signin, .signup_signup {
+        width: 100%;
+        margin: 3px 0; /* Adjust margin for smaller screens */
+    }
+}

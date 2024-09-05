@@ -1,0 +1,141 @@
+
+.service_head {
+   width: 100%;
+   background-color: aqua;
+   height: 60px;
+   text-align: center;
+   font-size: 24px;
+   font-weight: bold;
+   padding-top: 10px;
+   
+}
+.service_section{
+    
+   display: flex;
+   justify-content: space-evenly;
+   background-color: #d5f0ea;
+   flex-wrap: wrap;
+   /* position: fixed; */
+}
+.box_service{
+    padding-top: 20px;;
+    margin-bottom: 20px;
+    border: 2px solid rgb(228, 211, 14);
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+}
+.box_img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.box_content{
+   margin-left: 1.5rem;
+   margin-right: 1.5rem;
+
+}
+.box_content p{
+   color: green;
+   font-size: 1.5rem;
+}
+.box_content h2{
+   color: rgb(20, 37, 37);
+   font-weight: bold;
+   font-size: 1.7rem;
+   text-align: center;
+}
+
+
+
+.video-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   z-index: -1;
+}
+
+video {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transform: translate(-50%, -50%);
+   z-index: -1;
+}
+.about{
+   width: 100%;
+   height: 600px;
+}
+
+
+/* Responsive CSS */
+@media (max-width: 1200px) {
+   .box_service {
+       width: 30%;
+   }
+}
+
+@media (max-width: 992px) {
+   .box_service {
+       width: 45%;
+   }
+
+   .box_content p {
+       font-size: 1.3rem;
+   }
+
+   .box_content h2 {
+       font-size: 1.5rem;
+   }
+}
+
+@media (max-width: 768px) {
+   .box_service {
+       width: 100%;
+   }
+
+   .service_head {
+       font-size: 20px;
+   }
+
+   .box_content p {
+       font-size: 1.2rem;
+   }
+
+   .box_content h2 {
+       font-size: 1.4rem;
+   }
+}
+
+@media (max-width: 576px) {
+   .service_head {
+       font-size: 18px;
+       height: 50px;
+       padding-top: 8px;
+   }
+
+   .box_content p {
+       font-size: 1rem;
+   }
+
+   .box_content h2 {
+       font-size: 1.2rem;
+   }
+
+   .box_img {
+       height: 200px;
+   }
+
+   .box_service {
+       height: auto;
+       padding: 10px 0px 10px;
+   }
+}

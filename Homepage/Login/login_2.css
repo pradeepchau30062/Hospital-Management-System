@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login_head {
+    height: 65px;
+    max-width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: flex-start;
+    padding: 0 2rem;
+}
+
+.login_image {
+    background-color: blue;
+    flex: 1;
+}
+
+.login_description {
+    background-color: aquamarine;
+    flex: 3;
+}
+
+.login_logo {
+    background-color: brown;
+    flex: 1;
+}
+
+.logo_nav {
+    background-color: #006546;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo_navbar {
+    margin-left: 1rem;
+}
+
+.logo_nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+
+.logo_nav a:hover {
+    text-decoration: underline;
+}
+
+.login_body {
+    background-image: url('/Homepage/Login/login_image.jpg');
+    height: 520px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.login_form {
+    height: 86%;
+    width: 80%;
+    max-width: 400px;
+    background-color: aqua;
+}
+
+.login_warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo_warning_box {
+    background-color: aquamarine;
+    height: 400px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* for sign up */
+.signup_head {
+    position: fixed;
+    background-color: #006546;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.signup_head h1 {
+    color: white;
+}
+
+.signup_img {
+    background-image: url('/Homepage/Login/login_image.jpg');
+    width: 80px;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+
+.signup_box {
+    margin-top: 80px;
+    position: relative;
+    background-color: beige;
+    height: auto;
+    width: 90%;
+    max-width: 700px;
+    margin: 80px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup_box_head {
+    background-color: aqua;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.signup_box_img {
+    background-image: url('/Homepage/Login/auth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.signup_box_details {
+    width: 100%;
+}
+
+.signup_case {
+    margin-top: 20px;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #006546;
+    border-radius: 10px;
+}
+
+.signup_signin {
+    border-radius: 10px 0px 0px 10px;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_signup {
+    border-radius: 0px 10px 10px 0px;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_signin:hover {
+    background-color: aqua;
+}
+
+.signup_signup:hover {
+    background-color: aqua;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .login_head {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    .login_image, .login_description, .login_logo {
+        width: 100%;
+    }
+    .logo_navbar {
+        margin-left: 1rem;
+    }
+    .logo_nav a {
+        margin-left: 1rem;
+    }
+    .login_form {
+        width: 90%;
+        height: auto;
+    }
+    .signup_box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo_nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo_nav a {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .signup_box {
+        width: 100%;
+        padding: 1rem;
+    }
+    .signup_box_head {
+        width: 100%;
+    }
+    .signup_case {
+        width: 100%;
+    }
+}
